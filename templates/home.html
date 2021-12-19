@@ -103,8 +103,8 @@
 
       <!--Pagination-->
 
-      {% if is_paginated %}
-      <nav class="d-flex justify-content-center wow fadeIn">
+      {% comment %} {% if is_paginated %} {% endcomment %}
+      {% comment %} <nav class="d-flex justify-content-center wow fadeIn">
         <ul class="pagination pg-blue">
 
           {% if page_obj.has_previous %}
@@ -132,7 +132,7 @@
           {% endif %}
         </ul>
       </nav>
-      {% endif %}
+      {% endif %} {% endcomment %}
 
     </div>
   </main>
